@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - GEOLINK</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- 🔝 NAVBAR -->
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="LogoLegacy.png" alt="GEOLINK">
+        </a>
+
+        <!-- Botón Hamburguesa -->
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="menu" id="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="planes.html">Planes</a></li>
+            <li><a href="cobertura.html">Cobertura</a></li>
+            <li><a href="contratar.html">Contratar</a></li>
+            <li><a href="soporte.html">Soporte</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Contáctanos</h1>
+    <p>Estamos para ayudarte</p>
+</section>
+
+<!-- INFO CONTACTO -->
+<section class="contacto-info">
+
+    <div class="info-box">
+        <h3>📞 Teléfono</h3>
+        <p>+52 775 130 4548</p>
+        <p>+52 775 757 8815</p>
+    </div>
+
+    <div class="info-box">
+        <h3>📧 Correo</h3>
+        <p>facturacion@geolinkhgo.com.mx</p>
+    </div>
+
+    <div class="info-box">
+        <h3>📍 Dirección</h3>
+        <p>Abasolo Nte #64<br>Apan, Hidalgo</p>
+    </div>
+
+</section>
+
+<!-- FORMULARIO -->
+<section class="formulario">
+    <div class="formulario-contenedor">
+        <h2>Envíanos un Mensaje</h2>
+
+        <div class="contenido-contacto">
+            
+            <!-- IMAGEN -->
+            <div class="lado-imagen">
+                <img src="logo.jpg" alt="Atención GEOLINK" class="img-contacto">
+            </div>
+
+            <!-- FORMULARIO -->
+            <div class="lado-formulario">
+                <form id="formContacto">
+                    <input type="text" id="nombre" placeholder="Nombre completo" required>
+                    <input type="tel" id="telefono" placeholder="Teléfono">
+                    <input type="email" id="correo" placeholder="Correo electrónico" required>
+                    <textarea id="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+                    <button type="submit" class="btn">
+                        Enviar Mensaje
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- MAPA -->
+<section class="mapa">
+
+    <h2>Ubicación</h2>
+
+    <iframe 
+        src="https://www.google.com/maps?q=Apan,Hidalgo&output=embed"
+        width="100%" 
+        height="350"
+        style="border-radius: 12px;">
+    </iframe>
+
+</section>
+
+<!-- CTA -->
+<section class="contacto">
+
+    <h2>¿Prefieres atención rápida?</h2>
+
+    <a href="https://wa.me/5217751304548" target="_blank" class="btn">
+        WhatsApp directo
+    </a>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p class="copy">© 2026 GEOLINK</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
