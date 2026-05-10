@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contratar - GEOLINK</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="LogoLegacy.png" alt="GEOLINK">
+        </a>
+
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="planes.html">Planes</a></li>
+            <li><a href="cobertura.html">Cobertura</a></li>
+            <li><a href="#" class="active">Contratar</a></li>
+            <li><a href="soporte.html">Soporte</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Contrata tu servicio</h1>
+    <p>Completa tus datos y te contactamos</p>
+</section>
+
+<!-- FORMULARIO -->
+<section class="formulario">
+
+    <form id="formContratar">
+
+        <input type="text" id="nombre" placeholder="Nombre completo" required>
+
+        <input type="tel" id="telefono" placeholder="Teléfono" required>
+
+        <input type="email" id="correo" placeholder="Correo electrónico">
+
+        <!-- ZONA -->
+        <select id="comunidad" required>
+            <option value="">Selecciona tu Municipio</option>
+            <option value="Apan">Apan</option>
+            <option value="Almoloya">Almoloya</option>
+            <option value="Axapuco">Axapusco</option>
+            <option value="Emiliano Zapata">Emiliano Zapata</option>
+            <option value="Tepeapulco">Tepeapulco</option>
+            <option value="Otra">Otra</option>
+        </select>
+
+        <!-- PLAN -->
+        <select id="plan" required>
+            <option value="">Selecciona un plan</option>
+            <option value="Básico 15 Mbps">$370 - Básico</option>
+            <option value="Premium 20 Mbps">$420 - Premium</option>
+            <!--<option value="Empresarial 50 Mbps">$699 - Empresarial</option>-->
+        </select>
+
+        <textarea id="direccion" placeholder="Dirección completa"></textarea>
+
+        <button type="button" onclick="obtenerUbicacion()" class="btn">
+    📍 Detectar ubicación automática
+</button>
+<p id="ubicacionTexto"></p>
+
+        <button type="submit" class="btn">
+            Solicitar contratación
+        </button>
+
+    </form>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p class="copy">© 2026 GEOLINK</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
