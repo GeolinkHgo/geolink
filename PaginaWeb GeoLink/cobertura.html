@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cobertura - GEOLINK</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="LogoLegacy.png" alt="GEOLINK">
+        </a>
+
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="planes.html">Planes</a></li>
+            <li><a href="#" class="active">Cobertura</a></li>
+            <li><a href="contratar.html">Contratar</a></li>
+            <li><a href="soporte.html">Soporte</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Consulta tu cobertura</h1>
+    <p>Selecciona tu zona para verificar disponibilidad</p>
+</section>
+
+<!-- MENÚ DE ZONAS -->
+<section class="cobertura">
+
+    <h2>📡 Consulta tu cobertura</h2>
+    <p>Selecciona tu ubicación</p>
+
+    <div class="filtros">
+
+        <!-- ESTADO -->
+        <select id="estado" onchange="cargarMunicipios()">
+            <option value="">Selecciona estado</option>
+            <option value="hidalgo">Hidalgo</option>
+            <option value="EdoMex">Estado de México</option>
+        </select>
+
+        <!-- MUNICIPIO -->
+        <select id="municipio" onchange="cargarComunidades()">
+            <option value="">Selecciona municipio</option>
+        </select>
+
+        <!-- COMUNIDAD -->
+        <select id="comunidad">
+            <option value="">Selecciona comunidad</option>
+        </select>
+
+    </div>
+
+    <br>
+
+    <button onclick="consultarCobertura()" class="btn">
+        Consultar disponibilidad
+    </button>
+
+    <p id="resultado"></p>
+
+</section>
+
+<!-- MAPA -->
+<section class="mapa">
+
+    <h2>Mapa de cobertura</h2>
+
+    <iframe 
+        src="https://www.google.com/maps/d/embed?mid=1DD0y2FEWiGMib_-i3435T0fnAOMF3aI&ehbc=2E312F"
+        width="100%" 
+        height="450"
+        style="border-radius: 12px;">
+    </iframe>
+
+</section>
+
+<footer>
+    <p class="copy">© 2026 GEOLINK</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
